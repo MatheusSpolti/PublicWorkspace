@@ -62,3 +62,8 @@ No responsibility is assumed for direct use in production environments.
 ## Author
 Matheus Spolti  
 Automation and Control Engineer
+
+---
+
+## Added Example: Android Daily Planner
+A new sample Android project was added in `android-daily-planner/` demonstrating a daily agenda with recurring tasks (daily, weekly, or one-time).
