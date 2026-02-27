@@ -42,6 +42,17 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 
 > Dica: a versão atual do projeto está com `minSdk = 24` (Android 7.0+).
 
+
+## Sem Android Studio (APK pronto via GitHub Actions)
+Se você só quer instalar no celular, sem abrir o projeto no Android Studio:
+
+1. Faça push deste repositório no GitHub.
+2. Abra a aba **Actions** no GitHub e execute o workflow **Build Android APK** (ou faça um push em `android-daily-planner/`).
+3. Ao final do job, baixe o artifact **daily-planner-debug-apk**.
+4. Extraia o `.zip` e instale o `app-debug.apk` no celular.
+
+> Observação: por ser build *debug*, ao instalar pode aparecer aviso de app não verificado. Isso é esperado para testes.
+
 ## Próximos passos sugeridos
 - Persistência local com Room.
 - Edição/exclusão de tarefa.
